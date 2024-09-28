@@ -6,7 +6,7 @@ const finalDateString = ref(new Date().toISOString().split('T')[0]);
 
 const execute = () => {
   // Define regex
-  const regexMoons = /(\d{1,2}) lune/;
+  const regexMoons = /(\d{1,3}) lune/;
   const regexDate = /(\d{2})\.(\d{2})\.(\d{4})/;
 
   const firstDateRegex = base.value.match(regexDate);
